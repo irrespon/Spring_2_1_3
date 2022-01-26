@@ -10,11 +10,9 @@ public class AnimalsCage {
     @Autowired
     @Qualifier("dog")
     private Animal animal;
-    private Timer timer;
 
-    public AnimalsCage(Timer timer) {
-        this.timer = timer;
-    }
+    @Autowired
+    private Timer timer;
 
     public void whatAnimalSay() {
         System.out.println("Say:");
